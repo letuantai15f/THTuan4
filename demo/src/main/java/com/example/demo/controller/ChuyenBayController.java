@@ -27,6 +27,13 @@ public class ChuyenBayController {
 		System.out.println(lstChuyenBay);
 		return lstChuyenBay;
 	}
+	@GetMapping("/dad")
+	public List<ChuyenBay> chuyenbaydalat() {
+		List<ChuyenBay> lstChuyenBay = (List<ChuyenBay>) repo.chuyenbayDAD("DAD");
+		System.out.println(lstChuyenBay);
+		return lstChuyenBay;
+	}
+	
 	
 
 	@PostMapping("")

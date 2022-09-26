@@ -11,5 +11,5 @@ import com.example.demo.entity.MayBay;
 @Repository
 public interface MayBayRepository extends CrudRepository<MayBay, Integer> {
 	@Query(value = "SELECT * FROM chuyenbay.maybay where TamBay>10000;",nativeQuery = true)
-	public List<ChuyenBay> chuyenBay10000km ();
+	public List<MayBay> chuyenBay10000km ();
 }
